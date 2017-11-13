@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html  dir= "rtl">
+
+<head>
+    <title> צור קשר </title>
+    <meta charset= "utf-8">
+    <link rel= "stylesheet"  href= "tafrit.css" >
+    <script language= "JavaScript" src= "menus.js"></script>
+</head>
+
+
+<body onLoad= "mark()">
+
+    <div id= wrapper>
+        <div id= koteret>
+            <p style= "text-align:center;   font-size:300%;   color:powderblue;">צור קשר</p>
+            <div><script> document.write(submenu1) </script></div>
+        </div>
+
+
+        <div id= content>
+            <h1 >מילוי פרטים:</h1>
+            <div id= content2>
+                <form method = "post"  action= "print2.php"  style = "width:1000px; color:white;">
+                    <br>
+                    <label for = "full name"><b> שם מלא: </b></label><br>
+                    <input type = "text" style  ="width:200px;"  name = "fname"><br><br>
+                    <label for= "mail adress"><b> כתובת מייל: </b></label><br>
+                    <input type = "text" placeholder= "example@example.com" name = "email"><br><br><br>
+                    <label for = "content"><b> תוכן הפנייה: </b><br> <textarea style = "width:300px;   height:85px;   "name=content placeholder = "הכנס/י בבקשה את פנייתך לכאן"></textarea><br>
+                    <br>
+                    <a href = "sent.html" onclick = "document.getElementById('form').submit()" id=send_button><em><b> שלח/י </b></em></a>
+                    <a href = "contact.html" onclick = "document.getElementById('form').reset()" id=send_button><em><b>נקה/י טופס</b></em></a>
+                </form>
+            </div> 
+        </div>
+
+
+        <div id=sidebar></div>
+
+        <div style = "clear:both"></div>
+
+        <div id=footer></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html  dir = "rtl">
+
+
+<head>
+    <title>מפה</title>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet"  href = "tafrit.css" >
+    <script language = "JavaScript" src = "menus.js"></script>
+</head>
+
+
+
+<body onLoad = "mark()">
+
+    <div id = wrapper>
+        <div id = koteret>
+            <p style = "text-align:center;   font-size:300%;   color:powderblue;">מפת העיר</p>
+            <div><script> document.write(submenu1) </script></div>
+        </div>
+
+
+        <div id = content>
+            <h1>מפה</h1>
+            <img src = "Jerusalem.png" style = "margin:20px;   border-radius:10px;"  alt="map"   title="map">
+            
+        </div>
+
+
+        <div id = sidebar>
+            <ul class=submenu  dir=rtl  id=side></ul>
+        </div>
+
+
+        <div style = "clear:both"></div>
+    
+        <div id=footer></div>
+    </div>
+</body>
+</html>
